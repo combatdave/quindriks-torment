@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=IM+Fell+Great+Primer:ital@0;1&family=IM+Fell+Great+Primer+SC&display=swap');
+body {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/cream-pixels.png');
+    background-color: #f6e8d6;
+    font-family: 'IM Fell English', serif;
+    text-align: center;
+    color: #4a392b;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 2rem;
+    margin: 0px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+button {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: 2px solid #4a392b;
+    background-color: #f6e8d6;
+    color: #4a392b;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #4a392b;
+    color: #f6e8d6;
+}
+
+#responseContainer {
+    margin-top: 20px;
+    border: 1px solid #4a392b;
+    background-color: rgba(246, 232, 214, 0.8);
+    padding: 20px;
+    display: inline-block;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .contentContainer {
+        flex-direction: column;
+    }
+}
+
+button {
+    /* Keep the existing button styles */
+    /* Update the font-size */
+    font-size: 1.4rem;
+}
