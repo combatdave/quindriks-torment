@@ -1,0 +1,11 @@
+Create an idea for a Wild Magic surge effect for DND 5e. Do not copy directly from the Wild Magic table, but instead create a new wild magic surge effect.
+The description should be short and concise, in the style of dnd 5e wild magic table effects. Ensure the effect is balanced and does not break the game.
+
+{{advanced_settings}}
+
+Your response will be in JSON format with the following fields:
+
+{{
+    "title": "Title of wild magic surge",
+    "description": "Wild magic surge effect"
+}}

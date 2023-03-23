@@ -74,3 +74,60 @@ button {
     /* Update the font-size */
     font-size: 1.4rem;
 }
+
+
+/* Add this to your existing CSS file */
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.inputContainer label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputContainer input[type="number"],
+.inputContainer input[type="text"] {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.2rem;
+    background-color: #f6e8d6;
+    border: 2px solid #4a392b;
+    color: #4a392b;
+    padding: 5px 10px;
+    outline: none;
+    /* width: 100%; */
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.inputContainer input[type="number"]:focus,
+.inputContainer input[type="text"]:focus {
+    border-color: #8a6f57;
+}
+
+#toggleAdvancedOptions {
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+button:disabled {
+    background-color: #d1c1a9;
+    color: #a89b82;
+    border-color: #a89b82;
+    cursor: not-allowed;
+}
+
+#historyContainer {
+    margin-top: 20px;
+    border: 1px solid #4a392b;
+    background-color: rgba(246, 232, 214, 0.8);
+    padding: 20px;
+    display: inline-block;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}

@@ -16,7 +16,29 @@
             <h2 id="responseTitle">Generating</h2>
             <p id="responseDescription">Hold on a moment, something wild is happening...</p>
         </div>
-        <button id="fetchData">New Effect</button>
+        <div class="advancedOptions" style="display:none;">
+            <h2>Advanced Options</h2>
+            <div class="inputContainer">
+                <label for="characterLevel">Character Level:</label>
+                <input type="number" id="characterLevel" name="characterLevel" min="1" max="99">
+
+                <label for="spellLevel">Spell Level:</label>
+                <input type="number" id="spellLevel" name="spellLevel" min="0" max="9">
+
+                <label for="effectType">Effect Type:</label>
+                <input type="text" id="effectType" name="effectType" placeholder="Eg. Rewarding">
+
+                <label for="themes">Themes:</label>
+                <input type="text" id="themes" name="themes" placeholder="Eg. spooky, vampire">
+            </div>
+        </div>
+        <button id="fetchData">Generate!</button>
+        <button id="toggleAdvancedOptions">Toggle advanced options</button>
+        <div id="historyContainer">
+            <h1>Previous Creations</h1>
+            <div id="historyList">
+            </div>
+        </div>
     </div>
     <script src="static/script.js"></script>
 </body>

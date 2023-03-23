@@ -1,0 +1,5 @@
+The spell effects should match the following characteristics:
+Character level: {character_level}
+Spell level: {spell_level}
+Effect type: {effect_type}
+Incorporate the following theme(s): {themes}

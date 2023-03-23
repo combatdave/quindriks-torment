@@ -29,6 +29,10 @@ def chat_gpt(prompt: str) -> Dict:
         max_tokens=500,
         n=1,
         stop=None,
-        temperature=0.5,
+        temperature=1,
     )
     return response.choices[0].message.content
+
+def load_prompt_template(filename: str) -> str:
+    with open(f"prompt_templates/{filename}", 'r', encoding='utf-8') as file:
+        return file.read()
