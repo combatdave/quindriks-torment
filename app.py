@@ -16,7 +16,7 @@ def generate_wild_magic():
     data = request.json
     if data is not None:
         settings = advanced_settings_template.format(**data)
-        prompt = prompt_template.format(advanced_setting=settings)
+        prompt = prompt_template.format(advanced_settings=settings)
     else:
         prompt = prompt_template
 
