@@ -24,7 +24,7 @@ def chat_gpt_json(prompt: str) -> Dict:
 
 def chat_gpt(prompt: str) -> Dict:
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4",
         messages=[{"role": "user", "content": prompt}],
         max_tokens=500,
         n=1,
